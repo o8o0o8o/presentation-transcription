@@ -71,12 +71,16 @@ Whenever the user does something that updates state, such as clicking a checkbox
 
 ### Slide 13
 The browser's back button triggers the onpopstate listener, which connects to the History API
-`window.onpopstate = function (event) {
+
+```javascript
+window.onpopstate = function (event) {
 if (event.state) {
 state = event.state;
 }
 render(state);
-};`
+};
+```
+
 Event has a property state that has old state. Just set your application state to this old state and trigger a re-render to display the old state
 
 ### Slide 14
