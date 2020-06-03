@@ -42,11 +42,17 @@ History objects represent each tab's session history as a flat, comma-separated 
 
 ### Slide 8
 *`window.history.length`: Returns the number of entries in the joint session history.
+
 *`window.history.state`: Returns the current state object.
+
 *`window.history.go(n)`: Goes backwards or forwards by the specified number of steps in the joint session history. If the value you specify is zero, it will reload the current page. If it would cause the target position to be outside the available range of the session history, then nothing happens.
+
 *`window.history.back()`: Goes backwards by one step in the joint session history. If there is no previous page to go to, it does nothing.
+
 *`window.history.forward()`: Goes forwards by one step in the joint session history. If there is no next page to go to, it does nothing.
+
 *`window.history.pushState(data, title [, url])`: Pushes the data specified in the arguments onto the session history, with the given title and URL (the URL is optional).
+
 *`window.history.replaceState(data, title [, url])`: Updates the current entry in the session history, with the given data, title and URL (the URL is optional).
 
 ### Slide 9
